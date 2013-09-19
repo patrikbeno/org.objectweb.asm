@@ -92,8 +92,7 @@
   <!-- ================================== -->
   
   <target name="check" unless="test.paths.configured">
-    <echo message="The 'build.properties' file must be configured"/>
-    <fail/>
+    <fail>The 'build.properties' file must be configured</fail>
   </target>
   
   <target name="init" depends="properties,check">  
